@@ -1,11 +1,11 @@
 {
  "owner": "IDBKR",
- "files_repo": "GameCars",
+ "files_repo": "RELEASES",
  "site_url": "https://idbkr.github.io",
  "built": "2026-11-21",
  "totals": {
-  "games": 24,
-  "models": 6232,
-  "bytes": 11330925650
+  "games": 21,
+  "models": 5474,
+  "bytes": 5332894929
  }
 }
