@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameCars - car models from racing games</title>
+<meta name="description" content="Car models extracted from racing games of PlayStation 2, PSP, Xbox, Xbox 360, PC and mobile, converted to FBX. One download per car.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="logo">GC</span> GameCars</a>
+  <input id="q" class="search" type="search" placeholder="Search every car and rim... (name or code)" autocomplete="off">
+</header>
+<main>
+  <section class="hero">
+    <h1>Car models from racing games</h1>
+    <p class="stats" id="stats"></p>
+    <p class="lead">Cars, rims and traffic vehicles extracted from the games below and converted to <b>FBX</b>: one file per car,
+      Y up, metres, the front of the car towards +Z, textures inside the file (Real Racing 3: in a <code>textures</code> folder next to it).
+      Where a game has them, hidden objects inside the FBX hold body kits, levels of detail and other variants. Every model is a separate
+      download.</p>
+  </section>
+  <section id="results" class="results hidden">
+    <h2 id="results-title"></h2>
+    <div id="results-grid" class="grid"></div>
+  </section>
+  <nav class="tabs" id="home-tabs">
+    <button class="tab on" data-view="games">Games</button>
+    <button class="tab" data-view="rims">Custom rims of all games</button>
+  </nav>
+  <section id="games" class="games"></section>
+  <section id="rims" class="hidden">
+    <div class="toolbar">
+      <span><select id="rim-game"></select> <input id="rim-filter" class="search inline" type="search" placeholder="Filter rims... (name)" autocomplete="off"></span>
+      <span id="rim-shown"></span>
+    </div>
+    <p class="hint">Shop / aftermarket rims only: the stock rim of every car is on the car itself. The Genki games (Kaido Racer 1 / 2, Racing Battle C1,
+      TXR Drift) number their rims, so there stock and shop rims are shown together.</p>
+    <div id="rim-grid" class="grid small"></div>
+    <p class="more"><button id="rim-more" class="tab hidden">Show more</button></p>
+  </section>
+</main>
+<footer class="foot">
+  <p>All cars, models, textures and names belong to their respective owners, the developers and publishers of the games. This is an
+    unofficial, non-commercial archive for research, preservation and modding, not affiliated with or endorsed by any of them.
+    Rights holders: open an issue in the files repository to have something removed.</p>
+  <p id="foot-links"></p>
+</footer>
+<script src="assets/app.js"></script>
+<script>GC.home();</script>
+</body>
+</html>

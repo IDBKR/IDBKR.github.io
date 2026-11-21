@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameCars</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><span class="logo">GC</span> GameCars</a>
+  <input id="filter" class="search" type="search" placeholder="Filter this game... (name or code)" autocomplete="off">
+</header>
+<main>
+  <section class="game-head">
+    <a class="back" href="./">&larr; all games</a>
+    <h1 id="title"></h1>
+    <p class="desc" id="desc"></p>
+    <p class="stats" id="counts"></p>
+    <div class="bulk" id="bulk"></div>
+    <details class="notes"><summary>About these models</summary><div id="notes"></div></details>
+  </section>
+  <nav class="tabs" id="tabs"></nav>
+  <div class="toolbar">
+    <span id="shown"></span>
+    <label>Sort <select id="sort"><option value="name">name</option><option value="size">size</option></select></label>
+  </div>
+  <div id="grid" class="grid"></div>
+</main>
+<footer class="foot">
+  <p>All cars, models, textures and names belong to their respective owners, the developers and publishers of the games. This is an
+    unofficial, non-commercial archive for research, preservation and modding, not affiliated with or endorsed by any of them.
+    Rights holders: open an issue in the files repository to have something removed.</p>
+  <p id="foot-links"></p>
+</footer>
+<script src="assets/app.js"></script>
+<script>GC.game();</script>
+</body>
+</html>
